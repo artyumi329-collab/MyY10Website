@@ -72,7 +72,7 @@ body {
 
 /* Styling for the individual topic cards rounded edges background color and a drop shadow */
 .topic-card{
-    background-image: image("k.png");
+    background-image: image("https://i.pinimg.com/1200x/47/97/b4/4797b41621ce4fbecb00016661dd7175.jpg");
     color: white;
     padding: 1em;
     border-radius: 0.5em;
