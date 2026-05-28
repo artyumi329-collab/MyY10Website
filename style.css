@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: "Sofia", sans-serif;
+    font-family: "Sofia", sans-serif;
 }
 
 /* The hero section styling- use your OWN Hero Image URL here */
@@ -28,35 +28,107 @@ body {
     opacity: 100%;
 }
 
-/* BIG text styling for the hero section text */
-.hero-text1 {
-    font-size: 20px;
-    font-family:'Times New Roman', Times, serif;
-    color: rgb(65, 21, 65); 
+/* Container to keep everything centered as a whole group */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
+/* Styling for "Mayumi Artuza" */
+.hero-text1 {
+    font-size: 20px; 
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(65, 21, 65); 
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    letter-spacing: 1px;
+    
+    /* THE ADJUSTMENT: Raised it up (from 35px to 20px) and shifted it slightly */
+    align-self: center;       
+    margin-left: 100px;    /* Shipped it slightly more to the right */
+    position: relative;
+    top: 20px;             /* Lifted it UP so it isn't too low on the word */
+    z-index: 2;            
+}
+
+/* Styling for "My Showcase Portfolio" */
 .hero-text2 {
     font-weight: bold;
-    font-family: "Tangerine";
+    font-family: "Tangerine", cursive;
     color: rgb(40, 28, 66);
     text-align: center;
     font-size: 110px;
+    margin: 0;     
+    padding: 0;
+    line-height: 0.8;
+    z-index: 1;
 }
 
 /* nice big font on a banner style background */
-.topic-title{
-    color: white;
-    font-size: 2em;
-    padding: 0.1em 3em;
-    background-color: rgb(241, 241, 241);
-    font-family: "Tangerine";
-    color: rgb(65, 21, 65); ;
-    font-size: 15px;
+.topic-title {
+    background-color: rgb(238, 238, 238);
+    padding: 15px 0;          /* Generous top/bottom spacing, clears sideways restriction */
     text-align: center;
+    width: 100%;              /* Ensures the background bar spans completely */
+    box-sizing: border-box;
+    border-radius: 4px;       /* Optional: rounds the corners of the bar slightly */
+}
+
+/* Colored Header Bar background for your Gifs section */
+.topic-title2 {
+    background-color: rgb(238, 238, 238); /* A deep purple bar to match your brand color theme */
+    padding: 15px 0;                   /* Creates the height and breathing room of the bar */
+    text-align: center;
+    width: 100%;                       /* Spans completely across its section container */
+    box-sizing: border-box;
+    border-radius: 4px;                /* Smooths the corners slightly */
+    margin-bottom: 2em;                /* Pushes the image grid down so it doesn't touch the bar */
+}
+
+/* Update your link spacing so they sit beautifully inside the background */
+.topic-title nav a {
+    font-family: "Tangerine", serif;
+    color: rgb(65, 21, 65);
+    font-size: 30px;          /* Boosted slightly so "Tangerine" remains readable */
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 20px;           /* Clean, uniform spacing between items */
+    display: inline-block;    /* Allows proper spacing behavior */
+    transition: color 0.3s ease;
+}
+
+/* Gifs text inside the colored bar */
+.topic-title2 h1 {
+    font-family: "Tangerine", serif;
+    color: rgb(40, 4, 56);              /* Changed to white text so it stands out on the dark bar */
+    font-size: 30px;           /* Makes the title elegant and readable */
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.topic-title nav a:hover {
+    color: rgb(110, 40, 110);
+    text-decoration: underline;
 }
 
 /* Three column grid with a nice big gap */
 .topic-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6em;
+    /* bring the whole section in off the sides of the page */
+    width: 70%;
+    /* top margin of 3em and center right/left */
+    margin: 3em auto;
+}
+
+.topic-content2{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 6em;
@@ -79,6 +151,33 @@ body {
     font-size: 17px;
 }
 
+.topic-card2 {
+    background-size: cover; 
+    color: rgb(65, 21, 65);
+    font-family: "Tangerine";
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    height: auto;
+    font-size: 17px;
+}
+
+/* 1. Hide the overlapping zoom edges ONLY for the cat card */
+.cat-card {
+    overflow: hidden; 
+}
+
+/* 2. Prepare ONLY the cat image for a smooth transition */
+.cat-card img {
+    transition: transform 0.5s ease; 
+    display: block;                  
+}
+
+/* 3. Zoom ONLY the cat when someone hovers over it */
+.cat-card:hover img {
+    transform: scale(1.35); /* Adjust this number to zoom closer or further */
+}
 
 /* Styling for the topic card titles */
 .topic-card-text{
@@ -88,8 +187,14 @@ body {
     text-align: center;
 }
 
+.topic-card-text2{
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    /* center align text */
+    text-align: center;
+}
 
-/* Styling for a footer section to take a bit of spcae at the bottom of the page */
+/* Styling for a footer section to take a bit of space at the bottom of the page */
 .footer{
     background-color: rgb(71, 71, 71);
     color: white;
