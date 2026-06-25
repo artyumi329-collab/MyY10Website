@@ -55,7 +55,6 @@ body {
     z-index: 2;            
 }
 
-/* Styling for "My Showcase Portfolio" */
 .hero-text2 {
     font-weight: bold;
     font-family: "Tangerine", cursive;
@@ -78,34 +77,31 @@ body {
     border-radius: 4px;       /* Optional: rounds the corners of the bar slightly */
 }
 
-/* Colored Header Bar background for your Gifs section */
 .topic-title2 {
-    background-color: rgb(238, 238, 238); /* A deep purple bar to match your brand color theme */
-    padding: 15px 0;                   /* Creates the height and breathing room of the bar */
+    background-color: rgb(238, 238, 238); 
+    padding: 15px 0;                   
     text-align: center;
-    width: 100%;                       /* Spans completely across its section container */
+    width: 100%;                    
     box-sizing: border-box;
-    border-radius: 4px;                /* Smooths the corners slightly */
-    margin-bottom: 2em;                /* Pushes the image grid down so it doesn't touch the bar */
+    border-radius: 4px;               
+    margin-bottom: 2em;               
 }
 
-/* Update your link spacing so they sit beautifully inside the background */
 .topic-title nav a {
     font-family: "Tangerine", serif;
     color: rgb(65, 21, 65);
-    font-size: 30px;          /* Boosted slightly so "Tangerine" remains readable */
+    font-size: 30px; 
     font-weight: bold;
     text-decoration: none;
-    margin: 0 20px;           /* Clean, uniform spacing between items */
-    display: inline-block;    /* Allows proper spacing behavior */
+    margin: 0 20px;   
+    display: inline-block; 
     transition: color 0.3s ease;
 }
 
-/* Gifs text inside the colored bar */
 .topic-title2 h1 {
     font-family: "Tangerine", serif;
-    color: rgb(40, 4, 56);              /* Changed to white text so it stands out on the dark bar */
-    font-size: 30px;           /* Makes the title elegant and readable */
+    color: rgb(40, 4, 56);   
+    font-size: 30px;   
     margin: 0;
     padding: 0;
     font-weight: bold;
@@ -161,22 +157,6 @@ body {
     max-width: 100%;
     height: auto;
     font-size: 17px;
-}
-
-/* 1. Hide the overlapping zoom edges ONLY for the cat card */
-.cat-card {
-    overflow: hidden; 
-}
-
-/* 2. Prepare ONLY the cat image for a smooth transition */
-.cat-card img {
-    transition: transform 0.5s ease; 
-    display: block;                  
-}
-
-/* 3. Zoom ONLY the cat when someone hovers over it */
-.cat-card:hover img {
-    transform: scale(1.35); /* Adjust this number to zoom closer or further */
 }
 
 /* Styling for the topic card titles */
