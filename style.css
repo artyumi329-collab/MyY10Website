@@ -67,10 +67,9 @@ body {
     z-index: 1;
 }
 
-/* nice big font on a banner style background */
 .topic-title {
     background-color: rgb(238, 238, 238);
-    padding: 15px 0;          /* Generous top/bottom spacing, clears sideways restriction */
+    padding: 15px 0;    
     text-align: center;
     width: 100%;              /* Ensures the background bar spans completely */
     box-sizing: border-box;
@@ -183,8 +182,8 @@ body {
 
 .topic-card, 
 .topic-card2 {
-    background-color: #EEE4F5;
-}
+    background-color: #ebe3f0;
+} 
 
 .topic-card img, 
 .topic-card2 img {
