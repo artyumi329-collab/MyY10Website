@@ -28,7 +28,6 @@ body {
     opacity: 100%;
 }
 
-/* Container to keep everything centered as a whole group */
 .hero-container {
     display: flex;
     flex-direction: column;
@@ -37,7 +36,6 @@ body {
     width: 100%;
 }
 
-/* Styling for "Mayumi Artuza" */
 .hero-text1 {
     font-size: 20px; 
     font-family: 'Times New Roman', Times, serif;
@@ -113,6 +111,7 @@ body {
     text-decoration: underline;
 }
 
+/* Three column grid with a nice big gap */
 .topic-content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -133,44 +132,48 @@ body {
     margin: 3em auto;
 }
 
-/* Styling for the individual topic cards rounded edges background color and a drop shadow */
-.topic-card {
-    background-size: cover; 
-    color: rgb(65, 21, 65);
-    font-family: "Tangerine";
-    padding: 1em;
-    border-radius: 0.5em;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-    max-width: 100%;
-    height: auto;
-    font-size: 17px;
+.topic-content {
+    display: flex;
+    justify-content: center;
+    gap: 6em;
+    width: 70%;
+    margin: 3em auto;
 }
 
+.topic-card, 
 .topic-card2 {
-    background-size: cover; 
     color: rgb(65, 21, 65);
     font-family: "Tangerine";
-    padding: 1em;
+    padding: 1.5em;
     border-radius: 0.5em;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-    max-width: 100%;
     height: auto;
     font-size: 17px;
+    background-color: #EEE4F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: max-content;
 }
 
-/* Styling for the topic card titles */
-.topic-card-text{
+.topic-card-text,
+.topic-card-text2 {
     font-size: 1.5em;
-    margin-bottom: 0.5em;
-    /* center align text */
+    margin-top: 0.5em;
+    margin-bottom: 0;
     text-align: center;
+    width: 100%;
 }
 
-.topic-card-text2{
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-    /* center align text */
-    text-align: center;
+.topic-card img, 
+.topic-card2 img {
+    display: block;
+    width: 285px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
 /* Styling for a footer section to take a bit of space at the bottom of the page */
@@ -179,15 +182,4 @@ body {
     color: white;
     text-align: right;
     padding: 3em 3em;
-}
-
-.topic-card, 
-.topic-card2 {
-    background-color: #EEE4F5;
-}
-
-.topic-card img, 
-.topic-card2 img {
-    width: attr(width px);
-    height: attr(height px);
 }
