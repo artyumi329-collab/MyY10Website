@@ -86,17 +86,6 @@ body {
     margin-bottom: 2em;               
 }
 
-.topic-title nav a {
-    font-family: "Tangerine", serif;
-    color: rgb(65, 21, 65);
-    font-size: 30px; 
-    font-weight: bold;
-    text-decoration: none;
-    margin: 0 20px;   
-    display: inline-block; 
-    transition: color 0.3s ease;
-}
-
 .topic-title2 h1 {
     font-family: "Tangerine", serif;
     color: rgb(40, 4, 56);   
@@ -189,4 +178,24 @@ body {
 .topic-card2 img {
     width: attr(width px);
     height: attr(height px);
+}
+
+.topic-title nav a {
+    font-family: "Tangerine", serif;
+    color: rgb(65, 21, 65);
+    font-size: 30px; 
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 20px;   
+    display: inline-block; 
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    padding: 2px 8px;
+    background-color: transparent;
+}
+
+.topic-title nav a:hover {
+    color: #ffffff;
+    background-color: #a06ea0;
+    text-decoration: none;
 }
