@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -24,47 +24,31 @@
             <nav>
                 <a href="index.html">Home</a>
                 <a href="imagecreation.html">Image Creation</a>
-                <a href="programming.html">Programming</a>
-                <a href="animation.html">Animation</a>
+                <a href="computer-science.html">Computer Science</a>
+                <a href="3D modeling.html">3D Modeling</a>
+                <a href="game development.html">Game Development</a>
             </nav>
         </div> 
         
+        <!-- Exact 3-column structural layout from your homepage -->
         <div class="topic-content">
-            <div class="topic-card">
-                <img src="images/Collage.png" alt="collage" width="285" height="350">
-                <h2 class="topic-card-text">Hobbies</h2>
+            
+            <!-- Column 1: Invisible layout spacer pushing game card to the absolute center -->
+            <div></div>
+            
+            <!-- Column 2: Centered Portfolio card holding your game widget -->
+            <div class="topic-card" style="display: flex; flex-direction: column; align-items: center; padding: 1.5em; width: auto;">
+                
+                <!-- Your exact new itch.io embed widget code -->
+                <iframe frameborder="0" src="https://itch.io/embed/4944439" width="100%" height="167" style="max-width: 552px; border-radius: 4px; margin: 30px 0;"><a href="https://25629.itch.io/platform">Platform by 25629</a></iframe>
+                
+                <!-- Title text matches the exact look and font family of Hobbies/Cherry Jam -->
+                <h2 class="topic-card-text">Platformer Game 🎮</h2>
             </div>
             
-            <div class="topic-card">
-                <img src="images/cheeryjam.jpg" alt="cherry jam" width="390" height="350">
-                <h2 class="topic-card-text">Cherry Jam 🍒</h2>
-            </div>
-
-            <div class="topic-card car-card">
-               <img src="images/car.png" alt="car" width="412" height="350">
-               <h2 class="topic-card-text">3D Car</h2>
-            </div>
-        </div>
-    </section>
-
-    <section class="topic2">
-        <div class="topic-title2">
-            <h1>Gifs</h1>
-        </div> 
-
-        <div class="topic-content2">
-            <div class="topic-card2">
-                <img src="images/grokgif2.gif" alt="gif" width="350" height="350">
-                <h2 class="topic-card-text">Pantone</h2>
-            </div>
-            <div class="topic-card2">
-                <img src="images/grokgif3.gif" alt="gif" width="350" height="350">
-                <h2 class="topic-card-text">Flower</h2>
-            </div>
-            <div class="topic-card2">
-                <img src="images/grokgif4.gif" alt="gif" width="350" height="350">
-                <h2 class="topic-card-text">Shape</h2>
-            </div>
+            <!-- Column 3: Invisible layout spacer -->
+            <div></div>
+            
         </div>
     </section>
 
