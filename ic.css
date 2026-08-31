@@ -1,10 +1,8 @@
-/* A simple css reset */
 body,
 html {
     margin: 0;
     padding: 0;
     height: 100%;
-    /* The Font Family- Really important!! */
     font-family: Arial, sans-serif;
     box-sizing: border-box;
 }
@@ -13,9 +11,8 @@ body {
     font-family: "Sofia", sans-serif;
 }
 
-/* The hero section styling- use your OWN Hero Image URL here */
 .hero {
-    background-image: url('https://i.pinimg.com/736x/19/eb/d9/19ebd911ef28319c374a4018d604b0bb.jpg');
+    background-image: url('https://wallcoveringsmart.com/cdn/shop/files/da63209_42.jpg?v=1689975887');
     height: 25vh;
     background-size: cover;
     background-position: center;
@@ -44,12 +41,10 @@ body {
     padding: 0;
     line-height: 1;
     letter-spacing: 1px;
-    
-    /* THE ADJUSTMENT: Raised it up (from 35px to 20px) and shifted it slightly */
-    align-self: center;       
-    margin-left: 100px;    /* Shipped it slightly more to the right */
+    align-self: center;        
+    margin-left: 100px;    
     position: relative;
-    top: 20px;             /* Lifted it UP so it isn't too low on the word */
+    top: 20px;             
     z-index: 2;            
 }
 
@@ -59,30 +54,74 @@ body {
     color: rgb(40, 28, 66);
     text-align: center;
     font-size: 110px;
-    margin: 0;     
+    margin: 0;    
     padding: 0;
     line-height: 0.8;
     z-index: 1;
 }
 
-/* nice big font on a banner style background */
 .topic-title {
     background-color: rgb(238, 238, 238);
-    padding: 15px 0;          /* Generous top/bottom spacing, clears sideways restriction */
+    padding: 15px 0;    
     text-align: center;
-    width: 100%;              /* Ensures the background bar spans completely */
+    width: 100%;              
     box-sizing: border-box;
-    border-radius: 4px;       /* Optional: rounds the corners of the bar slightly */
+    border-radius: 4px;       
 }
 
-.topic-title2 {
-    background-color: rgb(238, 238, 238); 
-    padding: 15px 0;                   
-    text-align: center;
-    width: 100%;                    
+.topic-content{
+    display: flex;
+    justify-content: center;
+    gap: 6em;
+    width: 70%;
+    margin: 3em auto;
+}
+
+.topic-card {
+    background-color: #e7dfec;
+    color: rgb(65, 21, 65);
+    font-family: "Tangerine";
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    width: 360px;
+    height: 480px;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     box-sizing: border-box;
-    border-radius: 4px;               
-    margin-bottom: 2em;               
+}
+
+.image-container {
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.topic-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.3em;
+}
+
+.topic-card-text{
+    font-size: 1.5em;
+    margin: 0;
+    text-align: center;
+}
+
+.footer{
+    background-color: rgb(71, 71, 71);
+    color: white;
+    text-align: right;
+    padding: 3em 3em;
+    font-family:  "Tangerine", serif;
 }
 
 .topic-title nav a {
@@ -93,93 +132,14 @@ body {
     text-decoration: none;
     margin: 0 20px;   
     display: inline-block; 
-    transition: color 0.3s ease;
-}
-
-.topic-title2 h1 {
-    font-family: "Tangerine", serif;
-    color: rgb(40, 4, 56);   
-    font-size: 30px;   
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    padding: 2px 8px;
+    background-color: transparent;
 }
 
 .topic-title nav a:hover {
-    color: rgb(110, 40, 110);
-    text-decoration: underline;
-}
-
-/* Three column grid with a nice big gap */
-.topic-content{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 6em;
-    /* bring the whole section in off the sides of the page */
-    width: 70%;
-    /* top margin of 3em and center right/left */
-    margin: 3em auto;
-}
-
-.topic-content2{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 6em;
-    /* bring the whole section in off the sides of the page */
-    width: 70%;
-    /* top margin of 3em and center right/left */
-    margin: 3em auto;
-}
-
-.topic-content {
-    display: flex;
-    justify-content: center;
-    gap: 6em;
-    width: 70%;
-    margin: 3em auto;
-}
-
-.topic-card, 
-.topic-card2 {
-    color: rgb(65, 21, 65);
-    font-family: "Tangerine";
-    padding: 1.5em;
-    border-radius: 0.5em;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-    height: auto;
-    font-size: 17px;
-    background-color: #EEE4F5;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    width: max-content;
-}
-
-.topic-card-text,
-.topic-card-text2 {
-    font-size: 1.5em;
-    margin-top: 0.5em;
-    margin-bottom: 0;
-    text-align: center;
-    width: 100%;
-}
-
-.topic-card img, 
-.topic-card2 img {
-    display: block;
-    width: 285px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-/* Styling for a footer section to take a bit of space at the bottom of the page */
-.footer{
-    background-color: rgb(71, 71, 71);
-    color: white;
-    text-align: right;
-    padding: 3em 3em;
+    color: #ffffff;
+    background-color: #a387a3;
+    text-decoration: none;
 }
