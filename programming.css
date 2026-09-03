@@ -1,5 +1,6 @@
 /* Simple CSS Reset */
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -22,6 +23,7 @@ body {
     color: white;
     text-align: center;
     position: relative;
+    opacity: 100%;
 }
 
 .hero-container {
@@ -63,9 +65,75 @@ body {
     background-color: rgb(238, 238, 238);
     padding: 15px 0;    
     text-align: center;
-    width: 100%;                         
+    width: 100%;              
     box-sizing: border-box;
     border-radius: 4px;       
+}
+
+.topic-title2 {
+    background-color: rgb(238, 238, 238); 
+    padding: 15px 0;                 
+    text-align: center;
+    width: 100%;                                         
+    box-sizing: border-box;
+    border-radius: 4px;                
+    margin-bottom: 2em;                
+}
+
+.topic-title2 h1 {
+    font-family: "Tangerine", serif;
+    color: rgb(40, 4, 56);   
+    font-size: 30px;   
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.topic-content2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6em;
+    width: 70%;
+    margin: 3em auto;
+}
+
+.topic-card2 {
+    background-color: #e7dfec;
+    background-size: cover; 
+    color: rgb(65, 21, 65);
+    font-family: "Tangerine";
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    height: auto;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.topic-card-text {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.footer {
+    background-color: rgb(71, 71, 71);
+    color: white;
+    text-align: right;
+    padding: 3em 3em;
+    font-family: "Tangerine", serif;
+}
+
+.topic-card2 img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: contain;
 }
 
 .topic-title nav a {
@@ -86,69 +154,4 @@ body {
     color: #ffffff;
     background-color: #a387a3;
     text-decoration: none;
-}
-
-.topic-title2 {
-    background-color: rgb(238, 238, 238); 
-    padding: 15px 0;                                 
-    text-align: center;
-    width: 100%;                                         
-    box-sizing: border-box;
-    border-radius: 4px;                
-    margin-top: 3em;
-    margin-bottom: 2em;                
-}
-
-.topic-title2 h1 {
-    font-family: "Tangerine", serif;
-    color: rgb(40, 4, 56);   
-    font-size: 35px;   
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.topic-content2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 6em;
-    width: 70%;
-    margin: 3em auto;
-}
-
-.topic-card2 {
-    background-color: #e7dfec;
-    color: rgb(65, 21, 65);
-    font-family: "Tangerine", serif;
-    padding: 1em;
-    border-radius: 0.5em;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.topic-card2 img {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    border-radius: 4px;
-}
-
-.topic-card-text {
-    font-size: 1.5em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    text-align: center;
-}
-
-.footer {
-    background-color: rgb(71, 71, 71);
-    color: white;
-    text-align: right;
-    padding: 3em 3em;
-    font-family: "Tangerine", serif;
-    font-size: 1.5em;
 }
